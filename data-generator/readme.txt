@@ -1,5 +1,6 @@
 Instructions
 ------------
+Change the Database Address and credentails in "benerator.xml" file
 
 Start database data generation by typing 'mvn benerator:generate' on the command line.
 Benerator will then create database tables of the databene shop example and populate them
