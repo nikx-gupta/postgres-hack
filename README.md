@@ -8,7 +8,11 @@
    ```bash
    sudo iptables -t nat -A PREROUTING -j DNAT -d 192.168.1.31 -p tcp --dport 5432 --to 10.1.232.136
    ```
-   
+ 3. Deploy ARM Template 
+   ```bash
+   az deployment group create -g rgdf -n nikxpgdeploy --template-file azure_app_with_db.json
+   ```
+
 References
 1. [kubegres Github](https://github.com/reactive-tech/kubegres)
  

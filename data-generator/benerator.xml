@@ -30,11 +30,11 @@
 
     <comment>define a database that will be referred by the id 'db' subsequently</comment>
     <database id="db"
-        url="jdbc:postgresql://192.168.1.31:5432/postgres"
+        url="jdbc:postgresql://nikx.postgres.database.azure.com:5432/postgres?sslmode=disable"
         driver="org.postgresql.Driver"
         schema="public"
-        user="postgres"
-        password="demo@123"/>
+        user="nikx@nikx"
+        password="demo$123"/>
 
     <comment>drop the current tables/sequences if they exist and recreate them</comment>
     <execute uri="{ftl:sql/${db.system}/drop_tables.${db.system}.sql}" target="db" onError="ignore"/>
